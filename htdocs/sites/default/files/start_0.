@@ -1,0 +1,4 @@
+#!/bin/bash
+#for i in `seq 1 100`
+/share/mpi/openmpi-1.4.2-gcc/bin/mpirun -np 48 --mca mpi_paffinity_alone 1 --mca btl openib,self -machinefile ./hosts ./xhpl
+#done

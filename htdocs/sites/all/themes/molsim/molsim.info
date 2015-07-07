@@ -1,0 +1,17 @@
+name = molsim
+description = 
+version = 1.0
+core = 6.x
+engine = phptemplate
+regions[menu] = Menu
+regions[left] = Left
+regions[right] = Right
+regions[heder] = Header
+regions[menu1] = Menu1
+regions[front] = front
+
+
+scripts[] = scripts/hoverIntent.js
+scripts[] = scripts/superfish.js
+scripts[] = scripts/sky.js
+

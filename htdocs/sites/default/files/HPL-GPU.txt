@@ -1,0 +1,4133 @@
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48135,1] Process rank: 0
+ 	Process OMPI jobid: [48135,1] Process rank: 1
+ 	Process OMPI jobid: [48135,1] Process rank: 2
+ 	Process OMPI jobid: [48135,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.800000 
+DGEMM split from environment variable 0.800000 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.800000 
+DGEMM split from environment variable 0.800000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.98              4.828e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0050869 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48377,1] Process rank: 0
+ 	Process OMPI jobid: [48377,1] Process rank: 1
+ 	Process OMPI jobid: [48377,1] Process rank: 2
+ 	Process OMPI jobid: [48377,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.500000 
+DGEMM split from environment variable 0.500000 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.500000 
+DGEMM split from environment variable 0.500000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               3.58              4.028e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0060513 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48371,1] Process rank: 0
+ 	Process OMPI jobid: [48371,1] Process rank: 1
+ 	Process OMPI jobid: [48371,1] Process rank: 2
+ 	Process OMPI jobid: [48371,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.750000 
+DGEMM split from environment variable 0.750000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.750000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.750000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               3.10              4.652e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0054978 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48363,1] Process rank: 0
+ 	Process OMPI jobid: [48363,1] Process rank: 1
+ 	Process OMPI jobid: [48363,1] Process rank: 2
+ 	Process OMPI jobid: [48363,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.790000 
+DGEMM split from environment variable 0.790000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.790000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.790000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               3.02              4.777e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0047623 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48355,1] Process rank: 0
+ 	Process OMPI jobid: [48355,1] Process rank: 1
+ 	Process OMPI jobid: [48355,1] Process rank: 2
+ 	Process OMPI jobid: [48355,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.550000 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.790000 
+DGEMM split from environment variable 0.790000 
+DTRSM split from environment variable 0.550000 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.790000 
+DGEMM split from environment variable 0.790000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               3.08              4.683e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0051655 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48341,1] Process rank: 0
+ 	Process OMPI jobid: [48341,1] Process rank: 1
+ 	Process OMPI jobid: [48341,1] Process rank: 2
+ 	Process OMPI jobid: [48341,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.790000 
+DGEMM split from environment variable 0.790000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.790000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.790000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.94              4.895e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049823 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48333,1] Process rank: 0
+ 	Process OMPI jobid: [48333,1] Process rank: 1
+ 	Process OMPI jobid: [48333,1] Process rank: 2
+ 	Process OMPI jobid: [48333,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.800000 
+DGEMM split from environment variable 0.800000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.800000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.800000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.93              4.912e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0054644 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48325,1] Process rank: 0
+ 	Process OMPI jobid: [48325,1] Process rank: 1
+ 	Process OMPI jobid: [48325,1] Process rank: 2
+ 	Process OMPI jobid: [48325,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.770000 
+DTRSM split from environment variable 0.770000 
+DGEMM split from environment variable 0.800000 
+DGEMM split from environment variable 0.800000 
+DTRSM split from environment variable 0.770000 
+DGEMM split from environment variable 0.800000 
+DTRSM split from environment variable 0.770000 
+DGEMM split from environment variable 0.800000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               3.01              4.783e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048209 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48313,1] Process rank: 0
+ 	Process OMPI jobid: [48313,1] Process rank: 1
+ 	Process OMPI jobid: [48313,1] Process rank: 2
+ 	Process OMPI jobid: [48313,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.90              4.969e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0061858 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48305,1] Process rank: 0
+ 	Process OMPI jobid: [48305,1] Process rank: 1
+ 	Process OMPI jobid: [48305,1] Process rank: 2
+ 	Process OMPI jobid: [48305,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.990000 
+DGEMM split from environment variable 0.990000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.990000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.990000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.93              4.921e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0051073 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48297,1] Process rank: 0
+ 	Process OMPI jobid: [48297,1] Process rank: 1
+ 	Process OMPI jobid: [48297,1] Process rank: 2
+ 	Process OMPI jobid: [48297,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.92              4.940e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0059279 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48291,1] Process rank: 0
+ 	Process OMPI jobid: [48291,1] Process rank: 1
+ 	Process OMPI jobid: [48291,1] Process rank: 2
+ 	Process OMPI jobid: [48291,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.800000 
+DTRSM split from environment variable 0.800000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.800000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.800000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.84              5.078e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0047660 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48283,1] Process rank: 0
+ 	Process OMPI jobid: [48283,1] Process rank: 1
+ 	Process OMPI jobid: [48283,1] Process rank: 2
+ 	Process OMPI jobid: [48283,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    6000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.850000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2        6000   960     2     2               2.84              5.068e+01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048664 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48264,1] Process rank: 0
+ 	Process OMPI jobid: [48264,1] Process rank: 1
+ 	Process OMPI jobid: [48264,1] Process rank: 2
+ 	Process OMPI jobid: [48264,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       16000   960     2     2              23.90              1.143e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0055664 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48259,1] Process rank: 0
+ 	Process OMPI jobid: [48259,1] Process rank: 1
+ 	Process OMPI jobid: [48259,1] Process rank: 2
+ 	Process OMPI jobid: [48259,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   26000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       26000   960     2     2              73.38              1.597e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0040649 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48471,1] Process rank: 0
+ 	Process OMPI jobid: [48471,1] Process rank: 1
+ 	Process OMPI jobid: [48471,1] Process rank: 2
+ 	Process OMPI jobid: [48471,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   36000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       36000   960     2     2             166.09              1.873e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0041700 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48455,1] Process rank: 0
+ 	Process OMPI jobid: [48455,1] Process rank: 1
+ 	Process OMPI jobid: [48455,1] Process rank: 2
+ 	Process OMPI jobid: [48455,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   46000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       46000   960     2     2             328.96              1.973e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0042671 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48425,1] Process rank: 0
+ 	Process OMPI jobid: [48425,1] Process rank: 1
+ 	Process OMPI jobid: [48425,1] Process rank: 2
+ 	Process OMPI jobid: [48425,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :     960 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       56000   960     2     2             555.08              2.109e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0039375 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48399,1] Process rank: 0
+ 	Process OMPI jobid: [48399,1] Process rank: 1
+ 	Process OMPI jobid: [48399,1] Process rank: 2
+ 	Process OMPI jobid: [48399,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1280 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       56000  1280     2     2             556.00              2.106e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0038182 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48621,1] Process rank: 0
+ 	Process OMPI jobid: [48621,1] Process rank: 1
+ 	Process OMPI jobid: [48621,1] Process rank: 2
+ 	Process OMPI jobid: [48621,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :  2ringM 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR03L4L2       56000  1120     2     2             539.51              2.170e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0039647 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48585,1] Process rank: 0
+ 	Process OMPI jobid: [48585,1] Process rank: 1
+ 	Process OMPI jobid: [48585,1] Process rank: 2
+ 	Process OMPI jobid: [48585,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48573,1] Process rank: 0
+ 	Process OMPI jobid: [48573,1] Process rank: 1
+ 	Process OMPI jobid: [48573,1] Process rank: 2
+ 	Process OMPI jobid: [48573,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       56000  1120     2     2             539.57              2.170e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0039647 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2	Num procs: 4
+ 	Process OMPI jobid: [48541,1] Process rank: 0
+ 	Process OMPI jobid: [48541,1] Process rank: 1
+ 	Process OMPI jobid: [48541,1] Process rank: 2
+ 	Process OMPI jobid: [48541,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1180 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       56000  1180     2     2             666.46              1.757e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0041903 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45659,1] Process rank: 0
+ 	Process OMPI jobid: [45659,1] Process rank: 1
+ 	Process OMPI jobid: [45659,1] Process rank: 2
+ 	Process OMPI jobid: [45659,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1140 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1140     2     2              26.63              1.026e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0061187 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45684,1] Process rank: 0
+ 	Process OMPI jobid: [45684,1] Process rank: 1
+ 	Process OMPI jobid: [45684,1] Process rank: 2
+ 	Process OMPI jobid: [45684,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1120     2     2              22.72              1.202e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048042 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45579,1] Process rank: 0
+ 	Process OMPI jobid: [45579,1] Process rank: 1
+ 	Process OMPI jobid: [45579,1] Process rank: 2
+ 	Process OMPI jobid: [45579,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1100 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1100     2     2              26.01              1.050e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049953 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45600,1] Process rank: 0
+ 	Process OMPI jobid: [45600,1] Process rank: 1
+ 	Process OMPI jobid: [45600,1] Process rank: 2
+ 	Process OMPI jobid: [45600,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1080 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1080     2     2              25.57              1.068e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0042254 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45624,1] Process rank: 0
+ 	Process OMPI jobid: [45624,1] Process rank: 1
+ 	Process OMPI jobid: [45624,1] Process rank: 2
+ 	Process OMPI jobid: [45624,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :     960      980     1000     1020     1040     1060     1120     1130 
+            1140 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000   960     2     2              23.47              1.163e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0055664 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000   980     2     2              25.75              1.061e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0046083 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1000     2     2              25.98              1.051e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0046798 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1020     2     2              25.83              1.057e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0050808 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1040     2     2              24.17              1.130e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048373 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1060     2     2              26.05              1.048e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048761 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1120     2     2              22.71              1.202e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048042 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1130     2     2              26.43              1.033e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048015 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1140     2     2              26.55              1.028e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0061187 ...... PASSED
+================================================================================
+
+Finished      9 tests with the following results:
+              9 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45524,1] Process rank: 0
+ 	Process OMPI jobid: [45524,1] Process rank: 1
+ 	Process OMPI jobid: [45524,1] Process rank: 2
+ 	Process OMPI jobid: [45524,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1200     1280     1360     1440 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1200     2     2              22.84              1.196e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049463 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1280     2     2              25.59              1.067e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048939 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1360     2     2              23.55              1.160e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049371 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1440     2     2              24.03              1.136e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049782 ...... PASSED
+================================================================================
+
+Finished      4 tests with the following results:
+              4 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45547,1] Process rank: 0
+ 	Process OMPI jobid: [45547,1] Process rank: 1
+ 	Process OMPI jobid: [45547,1] Process rank: 2
+ 	Process OMPI jobid: [45547,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       4 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       4 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L4L2       16000  1120     1     4              22.49              1.215e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0041107 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45453,1] Process rank: 0
+ 	Process OMPI jobid: [45453,1] Process rank: 1
+ 	Process OMPI jobid: [45453,1] Process rank: 2
+ 	Process OMPI jobid: [45453,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       4 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     1     4              18.44              1.481e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0039761 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45476,1] Process rank: 0
+ 	Process OMPI jobid: [45476,1] Process rank: 1
+ 	Process OMPI jobid: [45476,1] Process rank: 2
+ 	Process OMPI jobid: [45476,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       4 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       56000  1120     1     4             749.26              1.563e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)= 327689498.1566594 ...... FAILED
+||Ax-b||_oo  . . . . . . . . . . . . . . . . . =         270.717850
+||A||_oo . . . . . . . . . . . . . . . . . . . =       14147.398512
+||A||_1  . . . . . . . . . . . . . . . . . . . =       14144.374333
+||x||_oo . . . . . . . . . . . . . . . . . . . =           9.392428
+||x||_1  . . . . . . . . . . . . . . . . . . . =       26204.111995
+||b||_oo . . . . . . . . . . . . . . . . . . . =           0.500000
+================================================================================
+
+Finished      1 tests with the following results:
+              0 tests completed and passed residual checks,
+              1 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45390,1] Process rank: 0
+ 	Process OMPI jobid: [45390,1] Process rank: 1
+ 	Process OMPI jobid: [45390,1] Process rank: 2
+ 	Process OMPI jobid: [45390,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   56000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       56000  1120     2     2             517.18              2.264e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0038950 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45432,1] Process rank: 0
+ 	Process OMPI jobid: [45432,1] Process rank: 1
+ 	Process OMPI jobid: [45432,1] Process rank: 2
+ 	Process OMPI jobid: [45432,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   60000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       60000  1120     2     2             624.56              2.306e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0044876 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45349,1] Process rank: 0
+ 	Process OMPI jobid: [45349,1] Process rank: 1
+ 	Process OMPI jobid: [45349,1] Process rank: 2
+ 	Process OMPI jobid: [45349,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.25              1.285e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0057905 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45371,1] Process rank: 0
+ 	Process OMPI jobid: [45371,1] Process rank: 1
+ 	Process OMPI jobid: [45371,1] Process rank: 2
+ 	Process OMPI jobid: [45371,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.550000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              22.37              1.221e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0042796 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45264,1] Process rank: 0
+ 	Process OMPI jobid: [45264,1] Process rank: 1
+ 	Process OMPI jobid: [45264,1] Process rank: 2
+ 	Process OMPI jobid: [45264,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.350000 
+DTRSM split from environment variable 0.350000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.350000 
+DTRSM split from environment variable 0.350000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              23.09              1.183e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0056988 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45286,1] Process rank: 0
+ 	Process OMPI jobid: [45286,1] Process rank: 1
+ 	Process OMPI jobid: [45286,1] Process rank: 2
+ 	Process OMPI jobid: [45286,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+DTRSM split from environment variable 0.850000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.850000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.49              1.271e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0046317 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45190,1] Process rank: 0
+ 	Process OMPI jobid: [45190,1] Process rank: 1
+ 	Process OMPI jobid: [45190,1] Process rank: 2
+ 	Process OMPI jobid: [45190,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.750000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.750000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.34              1.280e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048646 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45212,1] Process rank: 0
+ 	Process OMPI jobid: [45212,1] Process rank: 1
+ 	Process OMPI jobid: [45212,1] Process rank: 2
+ 	Process OMPI jobid: [45212,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.650000 
+DTRSM split from environment variable 0.650000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.77              1.255e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048376 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45234,1] Process rank: 0
+ 	Process OMPI jobid: [45234,1] Process rank: 1
+ 	Process OMPI jobid: [45234,1] Process rank: 2
+ 	Process OMPI jobid: [45234,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.700000 
+DTRSM split from environment variable 0.700000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.700000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.700000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.72              1.258e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0049889 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45139,1] Process rank: 0
+ 	Process OMPI jobid: [45139,1] Process rank: 1
+ 	Process OMPI jobid: [45139,1] Process rank: 2
+ 	Process OMPI jobid: [45139,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.32              1.281e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0051775 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45161,1] Process rank: 0
+ 	Process OMPI jobid: [45161,1] Process rank: 1
+ 	Process OMPI jobid: [45161,1] Process rank: 2
+ 	Process OMPI jobid: [45161,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+DTRSM split from environment variable 0.780000 
+DTRSM split from environment variable 0.780000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.780000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.780000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.35              1.279e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0045566 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45182,1] Process rank: 0
+ 	Process OMPI jobid: [45182,1] Process rank: 1
+ 	Process OMPI jobid: [45182,1] Process rank: 2
+ 	Process OMPI jobid: [45182,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.740000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.740000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.740000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.740000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.33              1.280e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048610 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45086,1] Process rank: 0
+ 	Process OMPI jobid: [45086,1] Process rank: 1
+ 	Process OMPI jobid: [45086,1] Process rank: 2
+ 	Process OMPI jobid: [45086,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.760000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       16000  1120     2     2              22.40              1.219e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0052305 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [45109,1] Process rank: 0
+ 	Process OMPI jobid: [45109,1] Process rank: 1
+ 	Process OMPI jobid: [45109,1] Process rank: 2
+ 	Process OMPI jobid: [45109,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.760000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00R2R2       16000  1120     2     2              21.97              1.243e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0052305 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [49119,1] Process rank: 0
+ 	Process OMPI jobid: [49119,1] Process rank: 1
+ 	Process OMPI jobid: [49119,1] Process rank: 2
+ 	Process OMPI jobid: [49119,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   16000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.760000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       16000  1120     2     2              21.53              1.268e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0054752 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: tesla2.localdomain	Num procs: 4
+ 	Process OMPI jobid: [49032,1] Process rank: 0
+ 	Process OMPI jobid: [49032,1] Process rank: 1
+ 	Process OMPI jobid: [49032,1] Process rank: 2
+ 	Process OMPI jobid: [49032,1] Process rank: 3
+
+ =============================================================
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   60000 
+NB     :    1120 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Binary-exchange
+L1     : no-transposed form
+U      : no-transposed form
+EQUIL  : no
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Assigning device 0  to process on node tesla2.localdomain rank 0 
+Assigning device 2  to process on node tesla2.localdomain rank 2 
+Assigning device 1  to process on node tesla2.localdomain rank 1 
+Assigning device 3  to process on node tesla2.localdomain rank 3 
+DTRSM split from environment variable 0.760000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+DTRSM split from environment variable 0.760000 
+DGEMM split from environment variable 0.900000 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11R2R2       60000  1120     2     2             624.74              2.305e+02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0044561 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: node-13	Num procs: 8
+ 	Process OMPI jobid: [28556,1] Process rank: 0
+ 	Process OMPI jobid: [28556,1] Process rank: 4
+ 	Process OMPI jobid: [28556,1] Process rank: 8
+ 	Process OMPI jobid: [28556,1] Process rank: 12
+ 	Process OMPI jobid: [28556,1] Process rank: 16
+ 	Process OMPI jobid: [28556,1] Process rank: 20
+ 	Process OMPI jobid: [28556,1] Process rank: 24
+ 	Process OMPI jobid: [28556,1] Process rank: 28
+
+ Data for node: Name: node-14	Num procs: 8
+ 	Process OMPI jobid: [28556,1] Process rank: 1
+ 	Process OMPI jobid: [28556,1] Process rank: 5
+ 	Process OMPI jobid: [28556,1] Process rank: 9
+ 	Process OMPI jobid: [28556,1] Process rank: 13
+ 	Process OMPI jobid: [28556,1] Process rank: 17
+ 	Process OMPI jobid: [28556,1] Process rank: 21
+ 	Process OMPI jobid: [28556,1] Process rank: 25
+ 	Process OMPI jobid: [28556,1] Process rank: 29
+
+ Data for node: Name: node-15	Num procs: 8
+ 	Process OMPI jobid: [28556,1] Process rank: 2
+ 	Process OMPI jobid: [28556,1] Process rank: 6
+ 	Process OMPI jobid: [28556,1] Process rank: 10
+ 	Process OMPI jobid: [28556,1] Process rank: 14
+ 	Process OMPI jobid: [28556,1] Process rank: 18
+ 	Process OMPI jobid: [28556,1] Process rank: 22
+ 	Process OMPI jobid: [28556,1] Process rank: 26
+ 	Process OMPI jobid: [28556,1] Process rank: 30
+
+ Data for node: Name: node-16	Num procs: 8
+ 	Process OMPI jobid: [28556,1] Process rank: 3
+ 	Process OMPI jobid: [28556,1] Process rank: 7
+ 	Process OMPI jobid: [28556,1] Process rank: 11
+ 	Process OMPI jobid: [28556,1] Process rank: 15
+ 	Process OMPI jobid: [28556,1] Process rank: 19
+ 	Process OMPI jobid: [28556,1] Process rank: 23
+ 	Process OMPI jobid: [28556,1] Process rank: 27
+ 	Process OMPI jobid: [28556,1] Process rank: 31
+
+ =============================================================
+bash: /share/mpi/openmpi-1.4.2-gcc/bin/orted: No such file or directory
+--------------------------------------------------------------------------
+A daemon (pid 30505) died unexpectedly with status 127 while attempting
+to launch so we are aborting.
+
+There may be more information reported by the environment (see above).
+
+This may be because the daemon was unable to find all the needed shared
+libraries on the remote node. You may set your LD_LIBRARY_PATH to have the
+location of the shared libraries on the remote nodes and this will
+automatically be forwarded to the remote nodes.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: node-13	Num procs: 8
+ 	Process OMPI jobid: [28504,1] Process rank: 0
+ 	Process OMPI jobid: [28504,1] Process rank: 4
+ 	Process OMPI jobid: [28504,1] Process rank: 8
+ 	Process OMPI jobid: [28504,1] Process rank: 12
+ 	Process OMPI jobid: [28504,1] Process rank: 16
+ 	Process OMPI jobid: [28504,1] Process rank: 20
+ 	Process OMPI jobid: [28504,1] Process rank: 24
+ 	Process OMPI jobid: [28504,1] Process rank: 28
+
+ Data for node: Name: node-14	Num procs: 8
+ 	Process OMPI jobid: [28504,1] Process rank: 1
+ 	Process OMPI jobid: [28504,1] Process rank: 5
+ 	Process OMPI jobid: [28504,1] Process rank: 9
+ 	Process OMPI jobid: [28504,1] Process rank: 13
+ 	Process OMPI jobid: [28504,1] Process rank: 17
+ 	Process OMPI jobid: [28504,1] Process rank: 21
+ 	Process OMPI jobid: [28504,1] Process rank: 25
+ 	Process OMPI jobid: [28504,1] Process rank: 29
+
+ Data for node: Name: node-15	Num procs: 8
+ 	Process OMPI jobid: [28504,1] Process rank: 2
+ 	Process OMPI jobid: [28504,1] Process rank: 6
+ 	Process OMPI jobid: [28504,1] Process rank: 10
+ 	Process OMPI jobid: [28504,1] Process rank: 14
+ 	Process OMPI jobid: [28504,1] Process rank: 18
+ 	Process OMPI jobid: [28504,1] Process rank: 22
+ 	Process OMPI jobid: [28504,1] Process rank: 26
+ 	Process OMPI jobid: [28504,1] Process rank: 30
+
+ Data for node: Name: node-16	Num procs: 8
+ 	Process OMPI jobid: [28504,1] Process rank: 3
+ 	Process OMPI jobid: [28504,1] Process rank: 7
+ 	Process OMPI jobid: [28504,1] Process rank: 11
+ 	Process OMPI jobid: [28504,1] Process rank: 15
+ 	Process OMPI jobid: [28504,1] Process rank: 19
+ 	Process OMPI jobid: [28504,1] Process rank: 23
+ 	Process OMPI jobid: [28504,1] Process rank: 27
+ 	Process OMPI jobid: [28504,1] Process rank: 31
+
+ =============================================================
+bash: /share/mpi/openmpi-1.4.2-gcc/bin/orted: No such file or directory
+--------------------------------------------------------------------------
+A daemon (pid 30709) died unexpectedly with status 127 while attempting
+to launch so we are aborting.
+
+There may be more information reported by the environment (see above).
+
+This may be because the daemon was unable to find all the needed shared
+libraries on the remote node. You may set your LD_LIBRARY_PATH to have the
+location of the shared libraries on the remote nodes and this will
+automatically be forwarded to the remote nodes.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+
+
+ ========================   JOB MAP   ========================
+
+ Data for node: Name: node-13	Num procs: 8
+ 	Process OMPI jobid: [12797,1] Process rank: 0
+ 	Process OMPI jobid: [12797,1] Process rank: 4
+ 	Process OMPI jobid: [12797,1] Process rank: 8
+ 	Process OMPI jobid: [12797,1] Process rank: 12
+ 	Process OMPI jobid: [12797,1] Process rank: 16
+ 	Process OMPI jobid: [12797,1] Process rank: 20
+ 	Process OMPI jobid: [12797,1] Process rank: 24
+ 	Process OMPI jobid: [12797,1] Process rank: 28
+
+ Data for node: Name: node-14	Num procs: 8
+ 	Process OMPI jobid: [12797,1] Process rank: 1
+ 	Process OMPI jobid: [12797,1] Process rank: 5
+ 	Process OMPI jobid: [12797,1] Process rank: 9
+ 	Process OMPI jobid: [12797,1] Process rank: 13
+ 	Process OMPI jobid: [12797,1] Process rank: 17
+ 	Process OMPI jobid: [12797,1] Process rank: 21
+ 	Process OMPI jobid: [12797,1] Process rank: 25
+ 	Process OMPI jobid: [12797,1] Process rank: 29
+
+ Data for node: Name: node-15	Num procs: 8
+ 	Process OMPI jobid: [12797,1] Process rank: 2
+ 	Process OMPI jobid: [12797,1] Process rank: 6
+ 	Process OMPI jobid: [12797,1] Process rank: 10
+ 	Process OMPI jobid: [12797,1] Process rank: 14
+ 	Process OMPI jobid: [12797,1] Process rank: 18
+ 	Process OMPI jobid: [12797,1] Process rank: 22
+ 	Process OMPI jobid: [12797,1] Process rank: 26
+ 	Process OMPI jobid: [12797,1] Process rank: 30
+
+ Data for node: Name: node-16	Num procs: 8
+ 	Process OMPI jobid: [12797,1] Process rank: 3
+ 	Process OMPI jobid: [12797,1] Process rank: 7
+ 	Process OMPI jobid: [12797,1] Process rank: 11
+ 	Process OMPI jobid: [12797,1] Process rank: 15
+ 	Process OMPI jobid: [12797,1] Process rank: 19
+ 	Process OMPI jobid: [12797,1] Process rank: 23
+ 	Process OMPI jobid: [12797,1] Process rank: 27
+ 	Process OMPI jobid: [12797,1] Process rank: 31
+
+ =============================================================
+Warning: Permanently added 'node-15,192.168.0.15' (RSA) to the list of known hosts.
+Warning: Permanently added 'node-16,192.168.0.16' (RSA) to the list of known hosts.
+Warning: Permanently added 'node-14,192.168.0.14' (RSA) to the list of known hosts.
+bash: /share/mpi/openmpi-1.4.2-gcc/bin/orted: No such file or directory
+--------------------------------------------------------------------------
+A daemon (pid 3496) died unexpectedly with status 127 while attempting
+to launch so we are aborting.
+
+There may be more information reported by the environment (see above).
+
+This may be because the daemon was unable to find all the needed shared
+libraries on the remote node. You may set your LD_LIBRARY_PATH to have the
+location of the shared libraries on the remote nodes and this will
+automatically be forwarded to the remote nodes.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that the job aborted, but has no info as to the process
+that caused that situation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to cleanly terminate the daemons on the nodes shown
+below. Additional manual cleanup may be required - please refer to
+the "orte-clean" tool for assistance.
+--------------------------------------------------------------------------
+	node-14 - daemon did not report back when launched
+	node-16 - daemon did not report back when launched
+Permission denied, please try again.
+Permission denied, please try again.
