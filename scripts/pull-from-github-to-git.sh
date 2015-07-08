@@ -3,7 +3,7 @@ GIT="/www/molsim/progs/git/bin/git";
 
 
 
-gitRepoBase="/www/molsim/git-backup";
+gitRepoBase="/www/molsim/molsim_backup";
 
 
 startdir=`pwd`;

@@ -8,7 +8,7 @@ dbpass="sw8Dwsae";
 wwwdir="/www/molsim/www"; 
 scriptsdir="/www/molsim/scripts";
 
-gitRepoBase="/www/molsim/git-backup";
+gitRepoBase="/www/molsim/molsim_backup";
 
 
 startdir=`pwd`;

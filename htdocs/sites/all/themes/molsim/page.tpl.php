@@ -79,7 +79,7 @@
   <div id="clear"></div>
 </div>
 <div id="footer">
-  <div class="bor"><div class="bor"><?php print t('&nbsp; &nbsp; &nbsp; &copy; 2012, Molecular Simulations Group, Faculty of Biology, Moscow State Lomonosov University'); ?>
+  <div class="bor"><div class="bor"><?php print t('&nbsp; &nbsp; &nbsp; &copy; 2015, Molecular Simulations Group, Faculty of Biology, Moscow State Lomonosov University'); ?>
   <?php print $footer ?></div></div>
   </div>
 
